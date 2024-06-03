@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoGame = () => {
   return (
-    <div className=" flex flex-col justify-center items-center bg-[url('/bg-main-reverse.png')] bg-cover bg-center h-screen">
+    <div className=" flex flex-col justify-center items-center bg-[url('/bg-main.jpg')] bg-cover bg-center h-screen">
       <div className="flex flex-col justify-center items-center">
         <h1 className=" text-3xl md:text-7xl md:tracking-wide text-[#D31010] text-shadow-white text-center font-bold pt-20 ">
           AMARA LA MUÑECA POSEIDA:{" "}

@@ -10,7 +10,7 @@ const Nav = () => {
   const handleNavLinkClick = () => setNav(false);
 
   return (
-    <nav className="w-full flex justify-between items-center bg-[#ffffff80] px-8 fixed z-50">
+    <nav className="w-full flex justify-between items-center bg-[#00000080] backdrop-blur-sm px-8 fixed z-50">
       <Link to="/">
         <img src="/terror.png" alt="logo" className="w-20 " />
       </Link>
