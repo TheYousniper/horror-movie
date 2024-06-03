@@ -10,7 +10,7 @@ const Movie = () => {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center p-4 mt-4 mx-4 rounded-2xl bg-[#00000080] backdrop-blur-sm md:w-[70%] ">
-        <img src="/cd-cover.png" alt="movie" className=" w-[75%] md:w-[50%]" />
+        <img src="/cd-cover.png" alt="movie" className=" w-[75%] md:w-[50%] floating-image" />
         <p className="text-white text-base text-justify md:text-4xl text-shadow-red md:w-full">
           Un grupo de amigos, Iván Suárez, Valeria García y Jhanna Torres,
           decide jugar a la ouija en una casa abandonada. Durante el juego,

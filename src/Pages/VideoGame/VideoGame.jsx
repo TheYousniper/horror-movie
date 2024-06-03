@@ -10,7 +10,7 @@ const VideoGame = () => {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center p-4 mt-4 mx-4 rounded-2xl bg-[#00000080] backdrop-blur-sm md:w-[70%] ">
-      <img src="/juego.png" alt="movie" className=" w-[75%] md:w-[50%]" />
+      <img src="/juego.png" alt="movie" className=" w-[75%] md:w-[50%] floating-image" />
         <p className="text-white text-base text-justify md:text-4xl text-shadow-red">
           Los jugadores tomarán el control de las hermanas para poder escapar
           fuera de la ciudad y esconderse de la policía ellas podrán esconderse

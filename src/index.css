@@ -13,3 +13,20 @@
         text-shadow: 4px 3px 3px rgba(255,255,255,1);
     }
   }
+
+  @keyframes floating {
+    0%{
+      transform: translateY(-20px);
+  }
+  50%{
+      transform: translateY(0px);
+  }
+  100%{
+      transform: translateY(-20px);
+  }
+
+  }
+  
+  .floating-image {
+    animation: floating 2s ease-in-out infinite;
+  }
