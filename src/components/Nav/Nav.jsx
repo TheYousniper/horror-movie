@@ -16,44 +16,44 @@ const Nav = () => {
       </Link>
       <ul className="hidden md:flex text-2xl">
         <li className="list-none">
-          <NavLink
+          <Link
             className="text-white p-2 mx-2 rounded-lg transition duration-200 ease"
             to="/"
           >
             Inicio
-          </NavLink>
+          </Link>
         </li>
         <li className="list-none">
-          <NavLink
+          <Link
             className="text-white p-2 mx-2 rounded-lg transition duration-200 ease"
             to="/webseries"
           >
             Web Serie
-          </NavLink>
+          </Link>
         </li>
         <li className="list-none">
-          <NavLink
+          <Link
             className="text-white p-2 mx-2 rounded-lg transition duration-200 ease"
             to="/movie"
           >
             Pelicula
-          </NavLink>
+          </Link>
         </li>
         <li className="list-none">
-          <NavLink
+          <Link
             className="text-white p-2 mx-2 rounded-lg transition duration-200 ease"
             to="/book"
           >
             Libro
-          </NavLink>
+          </Link>
         </li>
         <li className="list-none">
-          <NavLink
+          <Link
             className="text-white p-2 mx-2 rounded-lg transition duration-200 ease"
             to="/videogame"
           >
             Juego
-          </NavLink>
+          </Link>
         </li>
       </ul>
       {/* Hamb or Close Icon */}
