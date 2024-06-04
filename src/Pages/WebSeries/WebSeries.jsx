@@ -4,13 +4,13 @@ const WebSeries = () => {
   return (
     <div className=" flex flex-col justify-center items-center bg-[url('/bg-main-reverse.png')] bg-cover bg-center h-screen">
       <div className="flex flex-col justify-center items-center">
-        <h1 className=" text-3xl md:text-7xl xl:text-6xl md:tracking-wide text-white font-bold pt-20 text-shadow-red">
+        <h1 className=" text-3xl md:text-7xl xl:text-6xl 2xl:text-8xl md:tracking-wide text-white font-bold pt-20 text-shadow-red">
           HISTORIA{" "}
           <span className="text-[#D31010] text-shadow-white">NUCLEAR</span>
         </h1>
       </div>
       <div className=" p-4 mt-4 mx-4 rounded-2xl bg-[#00000080] backdrop-blur-sm md:w-[50%] xl:w-[80%]">
-        <p className="text-white text-[15px] text-justify md:text-4xl text-shadow-red xl:text-2xl">
+        <p className="text-white text-[15px] text-justify md:text-4xl text-shadow-red xl:text-2xl 2xl:text-4xl">
           La familia Rodriguez conformada por los padres Kamila Hernandez y
           Fabio Rodriguez, su hija Mía Rodriguez de 12 años y Alice Rodriguez de
           19 años quién es muy rebelde y tiene un conflicto con sus padres,
