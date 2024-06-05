@@ -12,7 +12,7 @@ const BookModal = ({ open, onClose, children }) => {
       {/* Modal */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`bg-white rounded-xl shadow p-6 transition-all xl:mt-[-100px] mt-14 ${
+        className={`bg-white rounded-xl shadow p-6 transition-all mt-14 ${
           open ? "scale-100 opacity-100" : "scale-125 opacity-0"
         }`}
       >
