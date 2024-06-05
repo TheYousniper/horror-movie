@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import GameModal from "../../components/Modal/GameModal";
+
 
 const VideoGame = () => {
+
+  const images = [
+    {
+      name: "Amara",
+      image: "/amara.png",
+    },
+    {
+      name: "Mía Rodríguez",
+      image: "/gameMiaRodriguez.png",
+    },
+    {
+      name: "Alice Rodríguez",
+      image: "/gameAliceRodriguez.png",
+    },
+    {
+      name: "Policias",
+      image: "/gamePolices.png",
+    },
+    {
+      name: "Detective",
+      image: "/gameDetective.png",
+    },
+  ];
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div className=" flex flex-col justify-center items-center bg-[url('/bg-main.jpg')] bg-cover bg-center h-screen">
       <div className="flex flex-col justify-center items-center">
@@ -9,7 +37,7 @@ const VideoGame = () => {
           <span className="text-[#D31010] text-shadow-white">EL DESPERTAR</span>
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row items-center p-4 mt-4 mx-4 rounded-2xl bg-[#00000080] backdrop-blur-sm md:w-[70%] xl:w-[80%]">
+      <div className="flex flex-col md:flex-row items-center p-4 mx-4 rounded-2xl bg-[#00000080] backdrop-blur-sm md:w-[70%] xl:w-[80%]">
       <img src="/juego.png" alt="movie" className=" w-[75%] md:w-[50%] floating-image" />
         <p className="text-white text-base text-justify md:text-4xl text-shadow-red xl:text-2xl 2xl:text-4xl">
           Los jugadores tomarán el control de las hermanas para poder escapar
@@ -20,7 +48,34 @@ const VideoGame = () => {
           también el otro rol de investigación trabajar en equipo para poder
           ubicar y capturar a las hermanas y a la muñeca.
         </p>
+        <button
+          className="text-white md:text-2xl p-2 xl:ml-3 rounded-lg bg-[#D31010] hover:bg-white hover:text-[#D31010] duration-200 ease"
+          onClick={() => setOpen(true)}
+        >
+          Personajes
+        </button>
       </div>
+      <GameModal open={open} onClose={() => setOpen(false)}>
+            <div className="grid grid-cols-2 gap-4 xl:flex xl:flex-wrap xl:justify-center xl:items-center">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className={`flex flex-col justify-start items-center rounded-xl mt-1 ${
+                    index === images.length - 1 ? "col-span-2" : ""
+                  }`}
+                >
+                  <img
+                    src={image.image}
+                    alt={image.name}
+                    className="w-[80px] h-[80px] xl:w-[180px] xl:h-[200px] object-cover rounded-xl border border-red-900"
+                  />
+                  <h2 className="text-[#D31010] text-base md:text-2xl text-center">
+                    {image.name}
+                  </h2>
+                </div>
+              ))}
+            </div>
+          </GameModal>
     </div>
   );
 };
